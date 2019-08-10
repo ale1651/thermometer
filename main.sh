@@ -1,1 +1,1 @@
-echo $(date +"%d/%m/%Y %H:%M") $(tail -c 6 /sys/bus/w1/devices/28-0416355342ff/w1_slave) >> temperature_log.txt
+echo $(TZ='Europe/Rome' date +"%d/%m/%Y %H:%M") $(tail -c 6 /sys/bus/w1/devices/28-0416355342ff/w1_slave) >> /home/pi/thermometer/temperature_log.txt
